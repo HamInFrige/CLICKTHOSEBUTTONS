@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="alert-box"id="alert">
+        <p>Alert 박스</p>
+        <button onclick="알림창닫기()">닫기      
+        </button>
+        <button onclick="document.getElementById('alert').style.color = 'blue';">파란글씨      
+        </button>
+        <button onclick="document.getElementById('alert').style.color = 'red';">빨간글씨      
+        </button>
+        <button onclick="document.getElementById('alert').style.background = 'violet';">보라배경     
+        </button>
+        <button onclick="document.getElementById('alert').style.background = 'green';">초록배경   
+        </button>
+        <button onclick="document.getElementById('alert').style.padding = '100px';">커져라!  
+        </button>
+    </div>
+    <button onclick="알림창열기()">버튼      
+    </button>
+    <script>
+        function 알림창열기(){
+            document.getElementById('alert').style.display = 'block';
+        }
+        function 알림창닫기(){
+            document.getElementById('alert').style.display = 'none';
+        }
+    </script>
+    
+</body>
+</html>
