@@ -1,33 +1,118 @@
 <!doctype html>
-<html>
-<head>
-    <title>Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <form  class="calculator"name="calc">
-        <input class="value" type="text" name="txt"  readonly/>  
-        <span class="num clear" onclick="calc.txt.value = ''"/><i>C</i></span>
-        <span class="num" onclick="document.calc.txt.value += '/' "/><i>/</i></span>
-        <span class="num" onclick="document.calc.txt.value += '*' "/><i>*</i></span>
-        <span class="num" onclick="document.calc.txt.value += '7' "/><i>7</i></span>
-        <span class="num" onclick="document.calc.txt.value += '8' "/><i>8</i></span>
-        <span class="num" onclick="document.calc.txt.value += '9' "/><i>9</i></span>
-        <span class="num" onclick="document.calc.txt.value += '-' "/><i>-</i></span>
-        <span class="num" onclick="document.calc.txt.value += '4' "/><i>4</i></span>
-        <span class="num" onclick="document.calc.txt.value += '5' "/><i>5</i></span>
-        <span class="num" onclick="document.calc.txt.value += '6' "/><i>6</i></span>
-        <span class="num plus" onclick="document.calc.txt.value += '+' "/><i>+</i></span>
-        <span class="num" onclick="document.calc.txt.value += '1' "/><i>1</i></span>
-        <span class="num" onclick="document.calc.txt.value += '2' "/><i>2</i></span>
-        <span class="num" onclick="document.calc.txt.value += '3' "/><i>3</i></span>
-        <span class="num" onclick="document.calc.txt.value += '0' "/><i>0</i></span>
-        <span class="num" onclick="document.calc.txt.value += '00' "/><i>00</i></span>
-        <span class="num" onclick="document.calc.txt.value += '.' "/><i>.</i></span>
-        <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)"/><i>=</i></span>
-      </form>
-    </div>
-</body>
-</html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <title>Youtube Moblie</title>
+        <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title clamp">Youtube</span>
+            </div>
+            <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </header>
 
+        <!-- Video Player-->
+        <section class="player">
+        <video controls src="video/GLASSY.mp4"></video>
+        </section>
+
+        <!-- Video Info-->
+        <div class="infoAndUpNext">
+            <section class="info">
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>#조유리</li>
+                    <li>#Yuri</li>
+                    <li>#Glassy</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title">조유리(JO YURI) 'GLASSY' MV</span>
+                    <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+                </div>
+                <div class="views">
+                    <span class="views">조회수 4,877,562회 2021. 10. 7.</span>
+                </div>
+            </div>
+            <ul class="actions">
+                <li>
+                    <button>
+                        <i class="fas fa-thumbs-up"></i><span>270K</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fas fa-thumbs-down"></i><span>0</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fas fa-share"></i><span>Share</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fas fa-plus"></i><span>Save</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="channel">
+                <div class="metadata">
+                    <img src="image/icon.jpg" alt="">
+                    <div class="info">
+                        <span class="name">Stone Music Entertainment</span>
+                        <span class="subscribers">구독자 1030만명</span>
+                    </div>
+                </div>
+                <button class="subscribe">subscribe</button>
+            </div>
+            </section>
+            <section class="upNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <div class="img"><img src="image/1.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">'최초 공개' 유리다움 '조유리'의 'GLASSY' 무대 #엠카운트다운 EP.728 | Mnet 211007 방송</span>
+                        <span class="name">Mnet K-POP</span>
+                        <span class="views">조회수 501,128회</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/2.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">GLASSY - 조유리 (JOYURI) [뮤직뱅크/Music Bank] | KBS 211022 방송</span>
+                        <span class="name">KBS Kpop</span>
+                        <span class="views">조회수 271,585회</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/3.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">조유리 (JO YURI) | 'GLASSY' MV</span>
+                        <span class="name">조유리  JO YURI</span>
+                        <span class="views">조회수 12,110,107회</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+            </ul>
+            </section>
+        </div>
+    </body>
+</html>
